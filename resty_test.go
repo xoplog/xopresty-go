@@ -11,8 +11,8 @@ import (
 	"github.com/xoplog/xop-go/xopmiddle"
 	"github.com/xoplog/xop-go/xopnum"
 	"github.com/xoplog/xop-go/xoprecorder"
-	"github.com/xoplog/xop-go/xopresty"
 	"github.com/xoplog/xop-go/xoptest"
+	"github.com/xoplog/xopresty-go"
 
 	"github.com/muir/resty"
 	"github.com/stretchr/testify/assert"
