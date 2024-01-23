@@ -8,4 +8,6 @@
 
 ## 
 
-This provides a propagator using resty
+Package xopresty and outbound propagator for
+[xop](https://github.com/xoplog/xop-go) 
+using [resty](https://github.com/go-resty/resty).
