@@ -2,26 +2,12 @@
 package xopresty adds to the resty package to
 propagate xop context to through an HTTP request.
 
-As of March 29th, 2023, the released resty package does not provide
-a way to have a logger that knows which request it is logging about.
-The resty package does not provide a way to know when requests are
-complete.
-
-Pull requests to fix these issues have been merged but not
-made part of a release.
-
-In the meantime, this package depends upon https://github.com/muir/resty.
-
 The agumented resty Client requires that a context that
 has the parent log span be provided:
 
 	client.R().SetContext(log.IntoContext(context.Background()))
 
 If there is no logger in the context, the request will fail.
-
-If you use resty's Client.SetDebug(true), note that the output
-will be logged at Debug level which is below the default
-minimum level for xop.
 */
 package xopresty
 
